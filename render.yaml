@@ -1,10 +1,11 @@
 services:
 - type: web
-  name: xc
+  name: nocodb-application
   env: docker
   autoDeploy: false
   healthCheckPath: /dashboard
   region: frankfurt
+  plan: plan
   envVars:
   - key: DATABASE_URL
     fromDatabase:
@@ -13,4 +14,4 @@ services:
   - key: PORT
     value: 8080
 databases:
-- name: xc
+- name: nocodb-database
