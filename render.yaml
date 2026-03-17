@@ -5,7 +5,7 @@ services:
   autoDeploy: false
   healthCheckPath: /dashboard
   region: frankfurt
-  plan: plan
+  plan: standard
   envVars:
   - key: DATABASE_URL
     fromDatabase:
